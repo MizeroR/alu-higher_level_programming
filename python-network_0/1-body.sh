@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script that shows the response body redirecting /route_1
+# Script that GET request to URL & shows body of response
 curl -sL "$1"
