@@ -3,6 +3,7 @@
 import sys
 import MySQLdb
 
+
 def list_states(username, password, database):
     """lists all states from the database hbtn_0e_0_usa.
     Ags:
@@ -11,7 +12,8 @@ def list_states(username, password, database):
         database: mysql database
     """
     # Connect to the MySQL server
-    db = MySQLdb.connect(host='localhost', port=3306, user=username, passwd=password, db=database)
+    db = MySQLdb.connect(host='localhost',\
+            port=3306, user=username, passwd=password, db=database)
     cursor = db.cursor()
 
     # Execute the SQL query to fetch all states
@@ -26,6 +28,7 @@ def list_states(username, password, database):
 
     # Close the database connection
     db.close()
+
 
 # Example usage
 if __name__ == '__main__':
