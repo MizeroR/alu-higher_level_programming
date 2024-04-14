@@ -16,7 +16,7 @@ def list_states(username, password, database):
             port=3306, \
             user=username, \
             passwd=password, \
-            db=database)
+            db=database name)
     cursor = db.cursor()
 
     # Execute the SQL query to fetch all states
@@ -38,6 +38,6 @@ if __name__ == '__main__':
 
     username = sys.argv[1]
     password = sys.argv[2]
-    database = sys.argv[3]
+    database name = sys.argv[3]
 
-    list_states(username, password, database)
+    list_states(username, password, database name)
